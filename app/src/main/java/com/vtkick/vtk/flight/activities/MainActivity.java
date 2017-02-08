@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     /**
      * This method is responsible for hiding the keyboard
-     * when an item is selected.
+     * when an item from the autocomplete list is selected.
      */
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
