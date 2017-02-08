@@ -22,6 +22,5 @@
     <string name="hours">ω</string>
     <string name="minutes">λ</string>
     <string name="no_result">Δεν βρέθηκαν πτήσεις.</string>
-    <string name="returnS"></string>
     <string name="refresh">Ανανέωση</string>
 </resources>
