@@ -193,7 +193,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         directChkBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
 
