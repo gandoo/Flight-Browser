@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Flight Browser</string>
+    <string name="fromOrigin">From</string>
+    <string name="toDestination">To</string>
+    <string name="children">Children</string>
+    <string name="infants">Infants</string>
+    <string name="classS">Class</string>
+    <string name="no_max_price">NO LIMIT</string>
+    <string name="search_direct_flights_only">Search direct flights only</string>
+    <string name="adults">Adults</string>
+    <string name="rtrn">Return</string>
+    <string name="depart">Depart</string>
+    <string name="choose_destination">CHOOSE DESTINATION</string>
+    <string name="choose_origin">CHOOSE ORIGIN</string>
+    <string name="search">SEARCH</string>
+    <string name="connection_toast">Please check your internet connection.</string>
+    <string name="required_fields">Please fill the first 2 fields.</string>
+    <string name="duration">dur</string>
+    <string name="latin">Please use latin characters.</string>
+    <string name="days">d</string>
+    <string name="hours">h</string>
+    <string name="minutes">m</string>
+    <string name="no_result">No flights found.</string>
+    <string name="refresh">refresh</string>
+    <string-array name="class_array">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First</item>
+    </string-array>
+</resources>

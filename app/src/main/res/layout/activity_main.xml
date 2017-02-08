@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.vtkick.vtk.flight.activities.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/cyan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fromTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fromOrigin"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/fromBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/my_button"
+                    android:hint="@string/choose_origin"
+                    android:textAlignment="center"
+                    android:dropDownWidth="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/deleteBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_clear_button"
+                    android:minHeight="20dp"
+                    android:minWidth="40dp"
+                    android:layout_alignRight="@+id/fromBtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/toTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/toDestination"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/toBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/my_button"
+                    android:gravity="center_vertical|start"
+                    android:hint="@string/choose_destination"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:dropDownWidth="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/deleteBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_clear_button"
+                    android:minHeight="20dp"
+                    android:minWidth="40dp"
+                    android:layout_alignRight="@+id/toBtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </RelativeLayout>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/departTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:gravity="bottom"
+                        android:text="@string/depart"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/fromDateBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_button"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/returnChkBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:checked="false"
+                        android:gravity="bottom|center_vertical|start"
+                        android:text="@string/rtrn"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/toDateBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_button"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/adultsTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:gravity="bottom"
+                        android:text="@string/adults"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="+"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/add1"
+                            android:minWidth="30dip"
+                            android:layout_alignRight="@+id/adultTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub1"
+                            android:minWidth="30dip"
+                            android:layout_alignLeft="@+id/adultTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/adultTView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/my_button"
+                            android:text="1"
+                            tools:ignore="HardcodedText"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/childrenTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:gravity="bottom"
+                        android:text="@string/children"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="+"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/add2"
+                            android:minWidth="30dip"
+                            android:layout_alignRight="@+id/childrenTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub2"
+                            android:minWidth="30dip"
+                            android:layout_alignLeft="@+id/childrenTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/childrenTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/my_button"
+                            android:text="0"
+                            android:textAlignment="center"
+                            tools:ignore="HardcodedText"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/infantsTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:gravity="bottom"
+                        android:text="@string/infants"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="+"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/add3"
+                            android:minWidth="30dip"
+                            android:layout_alignRight="@+id/infantTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub3"
+                            android:minWidth="30dip"
+                            android:layout_alignLeft="@+id/infantTView"
+                            android:background="@drawable/my_button"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/infantTView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_button"
+                            android:text="0"
+                            android:textAlignment="center"
+                            tools:ignore="HardcodedText"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/classTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="bottom"
+                        android:text="@string/classS"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/class_spinner"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_button"
+                        android:textAlignment="center"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <CheckBox
+                    android:id="@+id/directChkBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:gravity="bottom|center_vertical|start"
+                    android:paddingBottom="6dp"
+                    android:text="@string/search_direct_flights_only"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:text="@string/search"
+            android:textSize="18sp"
+            android:id="@+id/searchBtn"
+            android:layout_height="55dp" />
+    </RelativeLayout>
+
+</LinearLayout>

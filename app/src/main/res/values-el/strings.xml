@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Περιηγητής Πτήσεων</string>
+    <string name="adults">Ενήλικες</string>
+    <string name="children">Παιδιά</string>
+    <string name="choose_destination">ΔΙΑΛΕΞΤΕ ΠΡΟΟΡΙΣΜΟ</string>
+    <string name="choose_origin">ΔΙΑΛΕΞΤΕ ΠΡΟΕΛΕΥΣΗ</string>
+    <string name="depart">Αναχώρηση</string>
+    <string name="fromOrigin">Από</string>
+    <string name="infants">Βρέφη</string>
+    <string name="classS">Κατηγορία</string>
+    <string name="no_max_price">ΧΩΡΙΣ ΟΡΙΟ</string>
+    <string name="rtrn">Επιστροφή</string>
+    <string name="search">ΑΝΑΖΗΤΗΣΗ</string>
+    <string name="search_direct_flights_only">Μόνο απευθείας πτήσεις</string>
+    <string name="toDestination">Προς</string>
+    <string name="connection_toast">Ελέγξτε την σύνδεση σας.</string>
+    <string name="required_fields">Συμπληρώστε τα πρώτα 2 πεδία.</string>
+    <string name="duration">διάρκεια</string>
+    <string name="latin">Χρησιμοποιείστε λατινικούς χαρακτήρες.</string>
+    <string name="days">μ</string>
+    <string name="hours">ω</string>
+    <string name="minutes">λ</string>
+    <string name="no_result">Δεν βρέθηκαν πτήσεις.</string>
+    <string name="returnS"></string>
+    <string name="refresh">Ανανέωση</string>
+</resources>
