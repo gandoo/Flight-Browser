@@ -59,7 +59,7 @@ public class MyAutocompleteAdapter extends ArrayAdapter implements Filterable {
                 FilterResults filterResults = new FilterResults();
                 if (constraint != null) {
                     //retrieve the autocomplete results.
-                    resultList = autocomplete(constraint.toString());
+                    resultList = autocompleteAPIcall(constraint.toString());
 
                     if (resultList != null) {
                         //assign the data to the FilterResults
@@ -97,7 +97,7 @@ public class MyAutocompleteAdapter extends ArrayAdapter implements Filterable {
      * @param input -> the current string that the user has typed.
      * @return -> the array that holds the autocomplete suggestions.
      */
-    private static ArrayList<String> autocomplete(String input) {
+    private static ArrayList<String> autocompleteAPIcall(String input) {
         HttpURLConnection conn = null;
         StringBuilder jsonResults = new StringBuilder();
         try {
